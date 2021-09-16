@@ -14,6 +14,7 @@ body {
   background: var(--main-bg-color);
 }
 .login-form {
+  box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.274);
   text-align: center;
   width: 400px;
   padding: 30px;
