@@ -1,0 +1,74 @@
+:root {
+  --main-bg-color: #2ecc71;
+  --secondary-bg-color: #24303c;
+  --text-color: white;
+  --border: #2ecc71;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: var(--main-bg-color);
+}
+.login-form {
+  border: 1px solid violet;
+  box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.274);
+  text-align: center;
+  width: 400px;
+  padding: 30px;
+  margin: 100px auto;
+   
+  color: var(--text-color);
+  background-color: var(--secondary-bg-color);
+  border-radius: 20px;
+}
+
+nav li {
+  font-size: 22px;
+  display: inline-block;
+  list-style: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+nav ul .active {
+  border-bottom: 2px solid var(--border);
+}
+form label,
+form input {
+  text-align: left;
+  display: block;
+  width: 100%;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+form input {
+  color: var(--text-color);
+  border: 1px solid var(--border);
+}
+form input:focus {
+  background: none;
+  color: var(--text-color);
+  border: none;
+}
+
+.login-form .button {
+  background-color: var(--border);
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
