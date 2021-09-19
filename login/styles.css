@@ -23,6 +23,7 @@ body {
   color: var(--text-color);
   background-color: var(--secondary-bg-color);
   border-radius: 20px;
+  
 }
 
 nav li {
@@ -35,6 +36,10 @@ nav li {
   padding: 10px 10px;
   cursor: pointer;
 }
+nav ul .active{
+  border-bottom: 2px solid var(--border);
+}
+
 form label,
 form input {
   text-align: left;
