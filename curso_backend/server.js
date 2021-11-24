@@ -1,9 +1,9 @@
-const http = require("http");
+const express = require("express");
 
-function answerRequest(request, response) {
-  response.end("Hello World!");
-}
+const app = express();
 
-let server = http.createServer(answerRequest);
+app.get("/", (req, res) => {
+  res.send("Hello World express");
+});
 
-server.listen(3000);
+app.listen(3000);
