@@ -1,0 +1,201 @@
+:root {
+	--color-1: #2c3e50;
+	--color-2: #34495e;
+	--color-3: #3498db;
+	--color-4: #fff;
+}
+/*
+ * STYLES GUIDE:
+ * 0. RESET
+ * 1. LAYOUT
+ * 2. GENERIC STYLES
+ * 3. PARTS OF THE WEB
+ * 4. LIST
+ * 5. FORM
+ * 6. ANIMATIONS
+ * -------------------
+ * COLORS
+    color1 => #2c3e50;
+    color2 => #34495e;
+    color3 => #3498db;
+    color4 => #fff;
+ * */
+
+/* 0. RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 1. LAYOUT */
+body {
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed';
+   min 25:17 
+}
+
+.header, .navbar, .list-services, .list-services figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 2. GENERIC STYLES */
+.header {
+	height: 450px;
+	background: url(../images/dummy-header.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.navbar {
+	background-color: var(--color-1);
+	height: 60px; 
+}
+
+.navbar a {
+	color: var(--color-4);
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 20px 'Stint Ultra Condensed';
+}
+
+.title {
+	margin-bottom: 40px;
+	font: 60px 'Stint Ultra Condensed';
+	text-transform: uppercase;
+}
+
+.who p {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.tarifas p, .services p {
+	margin-bottom: 40px;
+}
+
+.btn {
+	border: 2px solid var(--color-4);
+	padding: 10px 40px;
+	text-decoration: none;
+	color: var(--color-4);
+}
+/* 3. PARTS OF THE WEB */
+.content {
+	padding: 80px 3%;
+}
+
+.who {
+	background-color: var(--color-1);
+	color: var(--color-4);
+}
+
+.services {
+	background-color: var(--color-2);
+	color: var(--color-4);
+}
+
+.tarifas {
+	background: url(../images/dummy-tarifas.jpg) no-repeat center;
+	background-size: cover;
+	color: var(--color-4);
+}
+
+.contain {
+	max-width: 1000px;
+	margin: auto;
+	text-align: left;
+}
+
+.contain p {
+	max-width: 500px;
+}
+
+.localization {
+	padding: 0;
+	padding-top: 80px;
+	color: var(--color-2);
+	padding-bottom: 0;
+}
+
+.localization .map img {
+	max-width: 100%;
+	width: 100%;
+}
+/* 4. LIST */
+.list-services li {
+	padding: 0 30px;
+}
+.list-services figure {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	flex-flow: column;
+}
+
+.list-services figure:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	z-index: 0;
+	background-color: var(--color-4);
+	border-radius: 50%;
+	width: 150px;
+	height: 150px
+}
+
+.list-services figure img {
+	z-index: 1;
+}
+.list-services figure figcaption {
+	position: relative;
+	left: 0;
+	top: 40px
+}
+/* 5. FORM */
+/* 6. ANIMATIONS */
